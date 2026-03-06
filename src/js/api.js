@@ -8,6 +8,7 @@ export function fetchImages(query) {
     image_type: 'photo',
     orientation: 'horizontal',
     safesearch: true,
+    per_page: 40,
   });
 
   const url = `${BASE_URL}?${params}`;

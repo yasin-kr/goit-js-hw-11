@@ -71,13 +71,14 @@ body {
 .search-form {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 12px;
   margin-bottom: 24px;
 }
 
 .search-input {
   width: 300px;
-  padding: 10px 12px;
+  padding: 0 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 16px;
@@ -100,7 +101,7 @@ body {
 .gallery {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 50px;
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -125,15 +126,47 @@ body {
   object-fit: cover;
   display: block;
 }
-
 .info {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  font-size: 12px;
-  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  border-radius: 0 0 12px 12px;
 }
 
+.info-item {
+  padding: 10px 8px;
+  text-align: center;
+  border-right: 1px solid #e5e7eb;
+  transition: background 0.2s ease;
+}
+
+.info-item:last-child {
+  border-right: none;
+}
+
+.info-item:hover {
+  background: #eef2ff;
+}
+
+.info-label {
+  display: block;
+  font-size: 11px;
+  color: #6b7280;
+  margin-bottom: 3px;
+}
+
+.info-value {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.gallery-item:hover .info-value {
+  color: #4f6bed;
+}
+/* 
 .info p {
   margin: 0;
   text-align: center;
@@ -141,4 +174,4 @@ body {
 
 .info p:hover {
   color: #2f45a8;
-}
+} */

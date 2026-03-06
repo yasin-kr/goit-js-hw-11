@@ -58,5 +58,5 @@ function showNoResultsMessage() {
 }
 
 function handleError(error) {
-  console.error(error);
+  console.log(error);
 }

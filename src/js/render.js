@@ -27,10 +27,25 @@ alt="${tags}"
 </a>
 
 <div class="info">
-<p>Likes ${likes}</p>
-<p>Views ${views}</p>
-<p>Comments ${comments}</p>
-<p>Downloads ${downloads}</p>
+  <div class="info-item">
+    <span class="info-label">Likes</span>
+    <span class="info-value">${likes}</span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-label">Views</span>
+    <span class="info-value">${views}</span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-label">Comments</span>
+    <span class="info-value">${comments}</span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-label">Downloads</span>
+    <span class="info-value">${downloads}</span>
+  </div>
 </div>
 </li>`
     )
